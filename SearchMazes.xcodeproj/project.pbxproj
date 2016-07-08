@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC6294D81D2EE14100FA2C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294D71D2EE14100FA2C44 /* AppDelegate.swift */; };
+		BC6294DA1D2EE14100FA2C44 /* MazeScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BC6294D91D2EE14100FA2C44 /* MazeScene.sks */; };
+		BC6294DC1D2EE14100FA2C44 /* MazeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294DB1D2EE14100FA2C44 /* MazeScene.swift */; };
+		BC6294DE1D2EE14100FA2C44 /* MazeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294DD1D2EE14100FA2C44 /* MazeViewController.swift */; };
+		BC6294E11D2EE14100FA2C44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6294DF1D2EE14100FA2C44 /* Main.storyboard */; };
+		BC6294E31D2EE14100FA2C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6294E21D2EE14100FA2C44 /* Assets.xcassets */; };
+		BC6294E61D2EE14100FA2C44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6294E41D2EE14100FA2C44 /* LaunchScreen.storyboard */; };
+		BC6294EF1D2EE55E00FA2C44 /* wall.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6294EE1D2EE55E00FA2C44 /* wall.png */; };
+		BC6294F31D2EE63300FA2C44 /* MazeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294F21D2EE63300FA2C44 /* MazeNode.swift */; };
+		BC6294F51D2EE82900FA2C44 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294F41D2EE82900FA2C44 /* Cell.swift */; };
+		BC6295031D2EF08A00FA2C44 /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294F71D2EF08A00FA2C44 /* CGFloat+Extensions.swift */; };
+		BC6295041D2EF08A00FA2C44 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294F81D2EF08A00FA2C44 /* CGPoint+Extensions.swift */; };
+		BC6295051D2EF08A00FA2C44 /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294F91D2EF08A00FA2C44 /* CGVector+Extensions.swift */; };
+		BC6295061D2EF08A00FA2C44 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294FA1D2EF08A00FA2C44 /* Int+Extensions.swift */; };
+		BC6295071D2EF08A00FA2C44 /* SKAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294FB1D2EF08A00FA2C44 /* SKAction+Extensions.swift */; };
+		BC6295081D2EF08A00FA2C44 /* SKAction+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294FC1D2EF08A00FA2C44 /* SKAction+SpecialEffects.swift */; };
+		BC6295091D2EF08A00FA2C44 /* SKColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294FD1D2EF08A00FA2C44 /* SKColor+Extensions.swift */; };
+		BC62950A1D2EF08A00FA2C44 /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294FE1D2EF08A00FA2C44 /* SKNode+Extensions.swift */; };
+		BC62950B1D2EF08A00FA2C44 /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6294FF1D2EF08A00FA2C44 /* SKTAudio.swift */; };
+		BC62950C1D2EF08A00FA2C44 /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6295001D2EF08A00FA2C44 /* SKTEffects.swift */; };
+		BC62950D1D2EF08A00FA2C44 /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6295011D2EF08A00FA2C44 /* SKTTimingFunctions.swift */; };
+		BC62950E1D2EF08A00FA2C44 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6295021D2EF08A00FA2C44 /* Vector3.swift */; };
+		BC6295101D2F6F0A00FA2C44 /* Maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62950F1D2F6F0A00FA2C44 /* Maze.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BC6294D41D2EE14100FA2C44 /* SearchMazes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchMazes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6294D71D2EE14100FA2C44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC6294D91D2EE14100FA2C44 /* MazeScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MazeScene.sks; sourceTree = "<group>"; };
+		BC6294DB1D2EE14100FA2C44 /* MazeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeScene.swift; sourceTree = "<group>"; };
+		BC6294DD1D2EE14100FA2C44 /* MazeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeViewController.swift; sourceTree = "<group>"; };
+		BC6294E01D2EE14100FA2C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC6294E21D2EE14100FA2C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC6294E51D2EE14100FA2C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC6294E71D2EE14100FA2C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC6294EE1D2EE55E00FA2C44 /* wall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wall.png; sourceTree = "<group>"; };
+		BC6294F21D2EE63300FA2C44 /* MazeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MazeNode.swift; sourceTree = "<group>"; };
+		BC6294F41D2EE82900FA2C44 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		BC6294F71D2EF08A00FA2C44 /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		BC6294F81D2EF08A00FA2C44 /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		BC6294F91D2EF08A00FA2C44 /* CGVector+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
+		BC6294FA1D2EF08A00FA2C44 /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		BC6294FB1D2EF08A00FA2C44 /* SKAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Extensions.swift"; sourceTree = "<group>"; };
+		BC6294FC1D2EF08A00FA2C44 /* SKAction+SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+SpecialEffects.swift"; sourceTree = "<group>"; };
+		BC6294FD1D2EF08A00FA2C44 /* SKColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKColor+Extensions.swift"; sourceTree = "<group>"; };
+		BC6294FE1D2EF08A00FA2C44 /* SKNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
+		BC6294FF1D2EF08A00FA2C44 /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		BC6295001D2EF08A00FA2C44 /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
+		BC6295011D2EF08A00FA2C44 /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
+		BC6295021D2EF08A00FA2C44 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		BC62950F1D2F6F0A00FA2C44 /* Maze.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Maze.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC6294D11D2EE14100FA2C44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC6294CB1D2EE14100FA2C44 = {
+			isa = PBXGroup;
+			children = (
+				BC6294D61D2EE14100FA2C44 /* SearchMazes */,
+				BC6294D51D2EE14100FA2C44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC6294D51D2EE14100FA2C44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC6294D41D2EE14100FA2C44 /* SearchMazes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC6294D61D2EE14100FA2C44 /* SearchMazes */ = {
+			isa = PBXGroup;
+			children = (
+				BC6294D71D2EE14100FA2C44 /* AppDelegate.swift */,
+				BC6294D91D2EE14100FA2C44 /* MazeScene.sks */,
+				BC6294F21D2EE63300FA2C44 /* MazeNode.swift */,
+				BC62950F1D2F6F0A00FA2C44 /* Maze.swift */,
+				BC6294F41D2EE82900FA2C44 /* Cell.swift */,
+				BC6294DB1D2EE14100FA2C44 /* MazeScene.swift */,
+				BC6294DD1D2EE14100FA2C44 /* MazeViewController.swift */,
+				BC6294DF1D2EE14100FA2C44 /* Main.storyboard */,
+				BC6294E21D2EE14100FA2C44 /* Assets.xcassets */,
+				BC6294E41D2EE14100FA2C44 /* LaunchScreen.storyboard */,
+				BC6294E71D2EE14100FA2C44 /* Info.plist */,
+				BC6294F61D2EF08A00FA2C44 /* SKTUtils */,
+				BC6294ED1D2EE55E00FA2C44 /* Resources */,
+			);
+			path = SearchMazes;
+			sourceTree = "<group>";
+		};
+		BC6294ED1D2EE55E00FA2C44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC6294EE1D2EE55E00FA2C44 /* wall.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC6294F61D2EF08A00FA2C44 /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BC6294F71D2EF08A00FA2C44 /* CGFloat+Extensions.swift */,
+				BC6294F81D2EF08A00FA2C44 /* CGPoint+Extensions.swift */,
+				BC6294F91D2EF08A00FA2C44 /* CGVector+Extensions.swift */,
+				BC6294FA1D2EF08A00FA2C44 /* Int+Extensions.swift */,
+				BC6294FB1D2EF08A00FA2C44 /* SKAction+Extensions.swift */,
+				BC6294FC1D2EF08A00FA2C44 /* SKAction+SpecialEffects.swift */,
+				BC6294FD1D2EF08A00FA2C44 /* SKColor+Extensions.swift */,
+				BC6294FE1D2EF08A00FA2C44 /* SKNode+Extensions.swift */,
+				BC6294FF1D2EF08A00FA2C44 /* SKTAudio.swift */,
+				BC6295001D2EF08A00FA2C44 /* SKTEffects.swift */,
+				BC6295011D2EF08A00FA2C44 /* SKTTimingFunctions.swift */,
+				BC6295021D2EF08A00FA2C44 /* Vector3.swift */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC6294D31D2EE14100FA2C44 /* SearchMazes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6294EA1D2EE14100FA2C44 /* Build configuration list for PBXNativeTarget "SearchMazes" */;
+			buildPhases = (
+				BC6294D01D2EE14100FA2C44 /* Sources */,
+				BC6294D11D2EE14100FA2C44 /* Frameworks */,
+				BC6294D21D2EE14100FA2C44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchMazes;
+			productName = SearchMazes;
+			productReference = BC6294D41D2EE14100FA2C44 /* SearchMazes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC6294CC1D2EE14100FA2C44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Make School";
+				TargetAttributes = {
+					BC6294D31D2EE14100FA2C44 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = BC6294CF1D2EE14100FA2C44 /* Build configuration list for PBXProject "SearchMazes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC6294CB1D2EE14100FA2C44;
+			productRefGroup = BC6294D51D2EE14100FA2C44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC6294D31D2EE14100FA2C44 /* SearchMazes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC6294D21D2EE14100FA2C44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6294DA1D2EE14100FA2C44 /* MazeScene.sks in Resources */,
+				BC6294EF1D2EE55E00FA2C44 /* wall.png in Resources */,
+				BC6294E61D2EE14100FA2C44 /* LaunchScreen.storyboard in Resources */,
+				BC6294E31D2EE14100FA2C44 /* Assets.xcassets in Resources */,
+				BC6294E11D2EE14100FA2C44 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC6294D01D2EE14100FA2C44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6295041D2EF08A00FA2C44 /* CGPoint+Extensions.swift in Sources */,
+				BC62950C1D2EF08A00FA2C44 /* SKTEffects.swift in Sources */,
+				BC6295101D2F6F0A00FA2C44 /* Maze.swift in Sources */,
+				BC6295071D2EF08A00FA2C44 /* SKAction+Extensions.swift in Sources */,
+				BC6294F31D2EE63300FA2C44 /* MazeNode.swift in Sources */,
+				BC62950A1D2EF08A00FA2C44 /* SKNode+Extensions.swift in Sources */,
+				BC6294DC1D2EE14100FA2C44 /* MazeScene.swift in Sources */,
+				BC62950D1D2EF08A00FA2C44 /* SKTTimingFunctions.swift in Sources */,
+				BC6295081D2EF08A00FA2C44 /* SKAction+SpecialEffects.swift in Sources */,
+				BC6295061D2EF08A00FA2C44 /* Int+Extensions.swift in Sources */,
+				BC62950E1D2EF08A00FA2C44 /* Vector3.swift in Sources */,
+				BC6294F51D2EE82900FA2C44 /* Cell.swift in Sources */,
+				BC6295091D2EF08A00FA2C44 /* SKColor+Extensions.swift in Sources */,
+				BC6295051D2EF08A00FA2C44 /* CGVector+Extensions.swift in Sources */,
+				BC6294DE1D2EE14100FA2C44 /* MazeViewController.swift in Sources */,
+				BC62950B1D2EF08A00FA2C44 /* SKTAudio.swift in Sources */,
+				BC6295031D2EF08A00FA2C44 /* CGFloat+Extensions.swift in Sources */,
+				BC6294D81D2EE14100FA2C44 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC6294DF1D2EE14100FA2C44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC6294E01D2EE14100FA2C44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC6294E41D2EE14100FA2C44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC6294E51D2EE14100FA2C44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC6294E81D2EE14100FA2C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC6294E91D2EE14100FA2C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC6294EB1D2EE14100FA2C44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SearchMazes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.SearchMazes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC6294EC1D2EE14100FA2C44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SearchMazes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.SearchMazes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC6294CF1D2EE14100FA2C44 /* Build configuration list for PBXProject "SearchMazes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6294E81D2EE14100FA2C44 /* Debug */,
+				BC6294E91D2EE14100FA2C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC6294EA1D2EE14100FA2C44 /* Build configuration list for PBXNativeTarget "SearchMazes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6294EB1D2EE14100FA2C44 /* Debug */,
+				BC6294EC1D2EE14100FA2C44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC6294CC1D2EE14100FA2C44 /* Project object */;
+}
