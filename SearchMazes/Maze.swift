@@ -20,19 +20,18 @@ class Maze {
         self.delegate = delegate
     }
     
-    func generate(from from: Cell) {
+    func generate() {
         var cellStack = [Cell]()
-        var currentCell = delegate.cells.randomElement().randomElement()
+        var currentCell = delegate.randomCell()
         var visitedCells = 1
         
         while visitedCells < delegate.totalCells {
             let neighborDirections = unvistedGenerationNeighborDirections(for: currentCell)
-            if neighborDirections.count != 0 {
-                let direction = neighborDirections.randomElement()
+            if let direction = neighborDirections.randomElement() {
                 delegate.knockDown(direction, for: currentCell)
                 cellStack.append(currentCell)
-                let newCell = delegate.neighbor(to: direction, of: currentCell)
-                currentCell = newCell
+
+                currentCell = delegate.neighbor(to: direction, of: currentCell)
                 visitedCells += 1
             } else {
                 currentCell = cellStack.popLast()!
@@ -55,17 +54,14 @@ class Maze {
     func solve() {
         var cellStack = [Cell]()
         var currentCell = delegate.startCell
-        var visitedCells = 1
         
-        while currentCell !== delegate.goalCell {
+        while !currentCell.goal {
             let neighborDirections = unvistedSolutionNeighborDirections(for: currentCell)
-            if neighborDirections.count != 0 {
-                let direction = neighborDirections.randomElement()
+            if let direction = neighborDirections.randomElement() {
                 delegate.visit(direction, for: currentCell)
                 cellStack.append(currentCell)
-                let newCell = delegate.neighbor(to: direction, of: currentCell)
-                currentCell = newCell
-                visitedCells += 1
+
+                currentCell = delegate.neighbor(to: direction, of: currentCell)
             } else {
                 delegate.backtrack(cell: currentCell)
                 currentCell = cellStack.popLast()!
@@ -74,14 +70,27 @@ class Maze {
     }
     
     func unvistedSolutionNeighborDirections(for cell: Cell) -> [Direction] {
-        let allNeighborDirections = cell.openWalls
+        let allNeighborDirections = cell.openPaths
         var unvisitedNeighborDirections = [Direction]()
         for dir in allNeighborDirections {
             let potentialNeighbor = delegate.neighbor(to: dir, of: cell)
-            if potentialNeighbor.solution == nil && potentialNeighbor.backtrack == nil {
+            if !potentialNeighbor.onSolution && !potentialNeighbor.onBacktrack {
                 unvisitedNeighborDirections.append(dir)
             }
         }
         return unvisitedNeighborDirections
+    }
+}
+
+// An extension allows you to add functions to an existing class.
+// In this case, we have added a "randomElement" function to the
+// Array class to make your lives easier! Feel free to use this
+// code in future projects.
+extension Array {
+    func randomElement() -> Element? {
+        if self.count == 0 {
+            return nil
+        }
+        return self[Int(arc4random_uniform(UInt32(self.count)))]
     }
 }

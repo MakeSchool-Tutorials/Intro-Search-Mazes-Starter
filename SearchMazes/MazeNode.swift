@@ -9,12 +9,6 @@
 import Foundation
 import SpriteKit
 
-extension Array {
-    func randomElement() -> Element {
-        return self[Int(arc4random_uniform(UInt32(self.count)))]
-    }
-}
-
 func sync(lock: AnyObject, closure: () -> Void) {
     objc_sync_enter(lock)
     closure()
@@ -108,5 +102,12 @@ class MazeNode: SKSpriteNode {
     func neighbor(to direction: Direction, of cell: Cell) -> Cell {
         let dir = Direction.travel(to: direction)
         return cells[cell.column + dir.x][cell.row + dir.y]
+    }
+    
+    func randomCell() -> Cell {
+        guard let cell = cells.randomElement()?.randomElement() else {
+            fatalError("Maze setup failed!")
+        }
+        return cell
     }
 }

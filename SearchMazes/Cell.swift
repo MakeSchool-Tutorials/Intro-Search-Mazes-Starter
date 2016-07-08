@@ -53,11 +53,22 @@ class Cell {
     let backtrackColor = SKColorWithRGBA(249, g: 122, b: 46, a: 255)
     let defaultSize = CGSize(width: CellSize, height: CellSize)
     
-    private(set) var openWalls = [Direction]()
+    private(set) var openPaths = [Direction]()
     private(set) var neighborDirections: [Direction] = Direction.allValues()
     
     var solution: Direction?
     var backtrack: Direction?
+    
+    var onSolution: Bool {
+        get {
+            return solution != nil
+        }
+    }
+    var onBacktrack: Bool {
+        get {
+            return backtrack != nil
+        }
+    }
     
     var knockedDown = false
     
