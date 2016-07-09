@@ -118,7 +118,7 @@ class Cell {
     
     func knockDown(wall wall: Direction) -> SKNode {
         self.knockedDown = true
-        openWalls.append(wall)
+        openPaths.append(wall)
         return node.childNodeWithName(wall.rawValue)!
     }
 }

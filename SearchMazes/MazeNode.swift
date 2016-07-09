@@ -54,7 +54,7 @@ class MazeNode: SKSpriteNode {
         
         dispatch_async(queue) {
             usleep(UInt32(1 * Double(USEC_PER_SEC)))
-            self.maze.generate(from: self.startCell)
+            self.maze.generate()
             usleep(UInt32(2 * Double(USEC_PER_SEC)))
             self.maze.solve()
         }
@@ -76,7 +76,7 @@ class MazeNode: SKSpriteNode {
     }
     
     func visit(direction: Direction, for cell: Cell) {
-        if cell.openWalls.contains(direction) {
+        if cell.openPaths.contains(direction) {
             let dir = Direction.travel(to: direction)
             let neighbor = self.cells[cell.column + dir.x][cell.row + dir.y]
             let opposite = Direction.opposite(of: direction)

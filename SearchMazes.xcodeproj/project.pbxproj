@@ -90,18 +90,8 @@
 		BC6294D61D2EE14100FA2C44 /* SearchMazes */ = {
 			isa = PBXGroup;
 			children = (
-				BC6294D71D2EE14100FA2C44 /* AppDelegate.swift */,
-				BC6294D91D2EE14100FA2C44 /* MazeScene.sks */,
-				BC6294F21D2EE63300FA2C44 /* MazeNode.swift */,
 				BC62950F1D2F6F0A00FA2C44 /* Maze.swift */,
-				BC6294F41D2EE82900FA2C44 /* Cell.swift */,
-				BC6294DB1D2EE14100FA2C44 /* MazeScene.swift */,
-				BC6294DD1D2EE14100FA2C44 /* MazeViewController.swift */,
-				BC6294DF1D2EE14100FA2C44 /* Main.storyboard */,
-				BC6294E21D2EE14100FA2C44 /* Assets.xcassets */,
-				BC6294E41D2EE14100FA2C44 /* LaunchScreen.storyboard */,
-				BC6294E71D2EE14100FA2C44 /* Info.plist */,
-				BC6294F61D2EF08A00FA2C44 /* SKTUtils */,
+				BC69C5BD1D309313000A239B /* Engine */,
 				BC6294ED1D2EE55E00FA2C44 /* Resources */,
 			);
 			path = SearchMazes;
@@ -132,6 +122,24 @@
 				BC6295021D2EF08A00FA2C44 /* Vector3.swift */,
 			);
 			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+		BC69C5BD1D309313000A239B /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				BC6294D71D2EE14100FA2C44 /* AppDelegate.swift */,
+				BC6294D91D2EE14100FA2C44 /* MazeScene.sks */,
+				BC6294F21D2EE63300FA2C44 /* MazeNode.swift */,
+				BC6294F41D2EE82900FA2C44 /* Cell.swift */,
+				BC6294DB1D2EE14100FA2C44 /* MazeScene.swift */,
+				BC6294DD1D2EE14100FA2C44 /* MazeViewController.swift */,
+				BC6294DF1D2EE14100FA2C44 /* Main.storyboard */,
+				BC6294E21D2EE14100FA2C44 /* Assets.xcassets */,
+				BC6294E41D2EE14100FA2C44 /* LaunchScreen.storyboard */,
+				BC6294E71D2EE14100FA2C44 /* Info.plist */,
+				BC6294F61D2EF08A00FA2C44 /* SKTUtils */,
+			);
+			name = Engine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,6 +382,7 @@
 				BC6294EC1D2EE14100FA2C44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

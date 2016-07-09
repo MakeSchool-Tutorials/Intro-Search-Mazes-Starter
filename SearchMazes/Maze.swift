@@ -30,7 +30,6 @@ class Maze {
             if let direction = neighborDirections.randomElement() {
                 delegate.knockDown(direction, for: currentCell)
                 cellStack.append(currentCell)
-
                 currentCell = delegate.neighbor(to: direction, of: currentCell)
                 visitedCells += 1
             } else {
@@ -60,7 +59,6 @@ class Maze {
             if let direction = neighborDirections.randomElement() {
                 delegate.visit(direction, for: currentCell)
                 cellStack.append(currentCell)
-
                 currentCell = delegate.neighbor(to: direction, of: currentCell)
             } else {
                 delegate.backtrack(cell: currentCell)
